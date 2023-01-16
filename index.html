@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo"><img src="img/elastic-logo-reverse.svg" alt="Logo" width="200"    height="100"></div>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Catalog</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Feedback</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Donate to Us</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__container profile">
+                <div class="profile__title">
+                    <h2>Profile</h2>
+                </div>
+                <div class="profile__text">
+                    <p>To finish your registration please fill up additional information about you. Some of the questions are not obligatory. Right information will help us to provide your gift card during 5-6 business days.</p>
+                </div>
+                    <form class="profile__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST" enctype="multipart/form-data">
+                        <div class="form__block">
+                            <div class="form__column">
+                        <div class="form__item">
+                            <label for="name">Your name:</label>
+                            <input type="text" name="name" id="name" placeholder="Type your name" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="surname">Your surname:</label>
+                            <input type="text" name="surname" id="surname" placeholder="Type your surname" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="birth">Your birth date:</label>
+                            <input type="date" name="birth" id="birth">
+                        </div>
+                        </div>
+
+                    <div class="form__column">
+                            <div class="form__item">
+                                <label for="email">Your email:</label>
+                                <input type="text" name="email" id="email" placeholder="Type your email" required>
+                            </div>
+                            <div class="form__item">
+                                <label for="password">Your password:</label>
+                                <input type="text" name="password" id="password" placeholder="Type your password" required autocomplete="off">
+                            </div>
+                            <div class="form__item">
+                                <label for="tel">Your phone number:</label>
+                                <input type="tel" name="tel" id="tel" placeholder="Type your phone number">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form__second-block block">
+                            <div class="block__checkbox checkbox">
+                                <div class="checkbox__item">
+                                        <input class="checkbox__input" type="checkbox" name="child" id="child">
+                                        <label class="checkbox__label" for="child"><span>Do you have children?</span></label>
+                                    </div>
+                                    <div class="checkbox__item">
+                                        <input class="checkbox__input" type="checkbox" name="insurance" id="insurance">
+                                        <label class="checkbox__label" for="insurance"><span>Do you have insurance?</span> </label>
+                                    </div>
+                                    <div class="checkbox__item">
+                                        <input class="checkbox__input" type="checkbox" name="car" id="car">
+                                        <label class="checkbox__label" for="car"><span>Do you have car?</span> </label>
+                                    </div>
+                                    <div class="checkbox__item">
+                                        <input class="checkbox__input" type="checkbox" name="move" id="move">
+                                        <label class="checkbox__label" for="move"><span>Are you planning to move?</span> </label>
+                                    </div>
+                                </div>
+                                <div class="block__radio radio">
+                                    <div class="radio__title">How do you like to spend your free time?</div>
+                                    <div class="radio__item">
+                                    <input class="radio__input" type="radio" name="free-time" id="sleep" value="sleep">
+                                    <label class="radio__label" for="sleep"><span> Take a nap</span></label>
+                                    </div>
+                                    <div class="radio__item">
+                                    <input class="radio__input" type="radio" name="free-time" id="friends" value="friends">
+                                    <label class="radio__label" for="friends"><span>Go out with friends</span></label>
+                                    </div>
+                                    
+                                    <div class="radio__item">
+                                    <input class="radio__input" type="radio" name="free-time" id="sport" value="sport">
+                                    <label class="radio__label" for="sport"><span>Do sport</span></label>
+                                    </div>
+                                    
+                                    <div class="radio__item">
+                                    <input class="radio__input" type="radio" name="free-time" id="book" value="book">
+                                    <label class="radio__label" for="book"><span>Read a book</span></label>
+                                    </div>
+
+
+                                    <div class="radio__title">What animal would you choose?</div>
+                                    <div class="radio__item">
+                                    <input class="radio__input" type="radio" name="animal" id="dog" value="dog">
+                                    <label class="radio__label" for="dog"><span>Dog</span> </label>
+                                    </div>
+                                    <div class="radio__item">
+                                    <input class="radio__input" type="radio" name="animal" id="cat" value="cat">
+                                    <label class="radio__label" for="cat"><span>Cat</span> </label>
+                                    </div>
+                                    
+                                    <div class="radio__item">
+                                    <input class="radio__input" type="radio" name="animal" id="mouse" value="mouse">
+                                    <label class="radio__label" for="mouse"><span> Mouse</span> </label>
+                                    </div>
+                                    
+                                    <div class="radio__item">
+                                    <input class="radio__input" type="radio" name="animal" id="parrot" value="parrot">
+                                    <label class="radio__label" for="parrot"><span>Parrot</span> </label>
+                                    </div>
+                                </div>
+                                <div class="block__select select">
+                                    <div class="select__item">
+                                        <label for="age">Please choose your age range</label>
+                                        <select name="age" id="age">
+                    <option value="">Please choose an option</option>
+                    <option value="1-14">1-14</option>
+					<option value="14-18">14-18</option>
+					<option value="18-36">18-36</option>
+					<option value="36-50">36-50</option>
+					<option value="50-83">50-83</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        </div>  
+                        <div class="form__button button">
+                            <button class="button__item button__item-reset" type="reset">Reset</button>
+                            <button class="button__item button__item-submit" type="submit">Submit</button>
+                        </div>
+                    </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container homework">
+                <div class="homework__box box">
+                    <div class="box__img"><img src="img/illustration.svg" alt="illustration"></div>
+                    <div class="box__info info">
+                        <h6 class="info__subtitle">Any question?</h6>
+                        <h1 class="info__title">Drop us a line</h1>
+                        <form action="#" class="info__form">
+                            <div class="info__item">
+                                <label for="name01">First Name*</label>
+                                <input type="text" name="name01" placeholder="Your first name" id="name01" required>
+                            </div>
+                            <div class="info__item">
+                                <label for="surname01">Last Name*</label>
+                                <input type="text" name="surname01" placeholder="Your last name" id="surname01" required>
+                            </div>
+                            <div class="info__item">
+                                <label for="email01">Email*</label>
+                                <input type="email" name="email01" placeholder="Your email" id="email01" required>
+                            </div>
+                            <div class="info__item">
+                                <label for="tel01">Phone</label>
+                                <input type="tel" name="tel01" placeholder="Your phone number" id="tel01">
+                            </div>
+                            <div class="info__item info__item-textarea">
+                                <label for="message">Message*</label>
+                                <textarea name="message" placeholder="Your message" id="message" required></textarea>
+                            </div>
+                            <div class="info__line">
+                            <div class="info__item">
+                                <input class="info__input" type="checkbox" name="agree" id="agree">
+                                <label class="info__label" for="agree">I agree to receive communications from Createx Online School</label>
+                            </div>
+                            <div class="info__button">
+                                <button type="submit">Send message</button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    </div>
+
+        </footer>
+    </div>
+</body>
+</html>
